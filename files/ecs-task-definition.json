@@ -1,0 +1,22 @@
+[
+  {
+    "environment": [],
+    "name": "${NAME}",
+    "image": "amazon/amazon-ecs-sample",
+    "cpu": 10,
+    "memory": 500,
+    "portMappings": [
+      {
+        "containerPort": ${CONTAINER_PORT},
+        "hostPort": ${HOST_PORT}
+      }
+    ],
+    "mountPoints": [],
+    "entryPoint": [
+      "/usr/sbin/apache2",
+      "-D",
+      "FOREGROUND"
+    ],
+    "essential": true
+  }
+]
