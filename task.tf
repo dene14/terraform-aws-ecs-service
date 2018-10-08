@@ -1,5 +1,5 @@
 module "dummy_ecs_task" {
-  source = "../../my_modules/dummy_ecs_task"
+  source = "git@github.com:dene14/terraform-aws-ecs-task-definition.git"
   name = "${var.name}"
   cpu = "${var.cpu}"
   memory = "${var.memory}"
